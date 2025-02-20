@@ -1,5 +1,7 @@
+import java.util.*;
+
 public class NXN_Matrix_nForest{
-  void pattern1(int n){
+  static void nForest(int n){
     for(int i=0;i<n;i++){
       for(int j=0;j<n;j++){
         System.out.print("* ");
@@ -7,6 +9,14 @@ public class NXN_Matrix_nForest{
       System.out.println("");
     }
   }
+
+  public static void main(String[] args){
+    Scanner myObj = new Scanner(System.in);
+      System.out.println("Enter the value of n:");
+      int n = myObj.nextInt();
+      nForest(n);
+    myObj.close();
+  }
 }
 
-//WE need an input statement inside it
+//This code gona take input from the user and put it inside the provided method 
