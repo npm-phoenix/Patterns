@@ -1,3 +1,6 @@
+import java.util.*;
+
+
 public class Solution {
     public static void nTriangle(int n) {
         // Write your code here
@@ -8,5 +11,14 @@ public class Solution {
 
             System.out.println("");
         }
+    }
+    
+    public static void main(String[] arg){
+        
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter the valur of n:");
+        int n = myObj.nextInt();
+        nTriangle(n);
+        myObj.close();
     }
 }
